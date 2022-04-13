@@ -114,6 +114,7 @@
 	display: inline-block;
 	width: 15px;
 	height: 15px;
+	cursor: pointer;
 }
 .slide--specialists {
 }
@@ -132,7 +133,76 @@
 	width: 25px;
 	height: 25px;
 }
+.dot--specialists {
+	background: url('/DaringYoung/assets/icons/dot-specialists.svg');
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+}
+.dot--leaders {
+	background: url('/DaringYoung/assets/icons/dot-leaders.svg');
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+}
 
 .slide--active {
 	display: block;
+}
+
+.desk-info__button:hover {
+	background: $colorText;
+}
+
+.desk-info__button--beginners:hover {
+	color: $colorBeginners;
+}
+.desk-info__button--specialists:hover {
+	color: $colorSpecialists;
+}
+.desk-info__button--leaders:hover {
+	color: $colorLeaders;
+}
+
+// @if '#desk-info__button has class #desk-info__button--specialists' {
+// .desk-info__button--specialists:hover {
+
+// }
+// } @else if '#dot has class #dot--specialists' {
+// 	.dot:nth-child(1):hover {
+// 		background: url('/DaringYoung/assets/icons/dot-null-specialists.svg');
+// 	}
+// 	.dot:nth-child(3):hover {
+// 		background: url('/DaringYoung/assets/icons/dot-null-specialists.svg');
+// 	}
+// } @else if '#dot has class #dot--leaders' {
+// 	.dot:nth-child(1):hover {
+// 		background: url('/DaringYoung/assets/icons/dot-null-beginners.svg');
+// 	}
+// 	.dot:nth-child(2):hover {
+// 		background: url('/DaringYoung/assets/icons/dot-null-leaders.svg');
+// 	}
+// }
+
+@if '#dot has class #dot--beginners' {
+	.dot:nth-child(2):hover {
+		background: url('/DaringYoung/assets/icons/dot-null-beginners.svg');
+	}
+	.dot:nth-child(3):hover {
+		background: url('/DaringYoung/assets/icons/dot-null-beginners.svg');
+	}
+} @else if '#dot has class #dot--specialists' {
+	.dot:nth-child(1):hover {
+		background: url('/DaringYoung/assets/icons/dot-null-specialists.svg');
+	}
+	.dot:nth-child(3):hover {
+		background: url('/DaringYoung/assets/icons/dot-null-specialists.svg');
+	}
+} @else if '#dot has class #dot--leaders' {
+	.dot:nth-child(1):hover {
+		background: url('/DaringYoung/assets/icons/dot-null-beginners.svg');
+	}
+	.dot:nth-child(2):hover {
+		background: url('/DaringYoung/assets/icons/dot-null-leaders.svg');
+	}
 }

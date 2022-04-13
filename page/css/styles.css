@@ -137,6 +137,7 @@
   display: inline-block;
   width: 15px;
   height: 15px;
+  cursor: pointer;
 }
 
 .dot--beginners {
@@ -146,8 +147,46 @@
   height: 25px;
 }
 
+.dot--specialists {
+  background: url("/DaringYoung/assets/icons/dot-specialists.svg");
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+.dot--leaders {
+  background: url("/DaringYoung/assets/icons/dot-leaders.svg");
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
 .slide--active {
   display: block;
+}
+
+.desk-info__button:hover {
+  background: #fff;
+}
+
+.desk-info__button--beginners:hover {
+  color: #0ed984;
+}
+
+.desk-info__button--specialists:hover {
+  color: #3577f7;
+}
+
+.desk-info__button--leaders:hover {
+  color: #d72df3;
+}
+
+.dot:nth-child(2):hover {
+  background: url("/DaringYoung/assets/icons/dot-null-beginners.svg");
+}
+
+.dot:nth-child(3):hover {
+  background: url("/DaringYoung/assets/icons/dot-null-beginners.svg");
 }
 
 .information {
