@@ -1,0 +1,29 @@
+.information {
+	padding: 120px 0 200px 0;
+}
+.information-sections {
+	display: flex;
+	.information-sections__item {
+	}
+}
+.information-item {
+	.information-item__desk {
+		margin: 30px 0 0 0;
+	}
+}
+
+.information-item__title {
+	margin: 20px 0 0 0;
+	font-size: 36px;
+	line-height: 115%;
+	color: #1d1a1a;
+}
+.information-item__title--begginers {
+	color: $colorBeginners;
+}
+.information-item__title--specialists {
+	color: $colorSpecialists;
+}
+.information-item__title--leaders {
+	color: $colorLeaders;
+}

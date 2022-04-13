@@ -1,0 +1,200 @@
+@import url("./components/normalize.css");
+@import url("./components/global.css");
+.slide {
+  display: none;
+}
+
+.slide--beginners {
+  position: relative;
+  background: url("/DaringYoung/assets/images/beginners/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 138px;
+}
+
+.slide__header {
+  padding-top: 70px;
+}
+
+.slide__link:hover,
+.slide__link:active,
+.slide__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 198px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo .logo__name {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 120%;
+  color: #fff;
+}
+
+.logo .logo__icon {
+  background: url("/DaringYoung/assets/icons/logo.svg");
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.logo .logo__second-name {
+  font-size: 22px;
+  line-height: 120%;
+}
+
+.logo .logo--beginners {
+  color: #0ed984;
+}
+
+.slide__desk {
+  padding-top: 195px;
+}
+
+.desk .desk__sub-title {
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  line-height: 120%;
+  color: #0ed984;
+  margin: 0;
+}
+
+.desk .desk__sub-title::after {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  right: 0;
+  background: #0ed984;
+  width: 100%;
+  height: 3px;
+}
+
+.desk .desk__title {
+  margin: 20px 0 0 0;
+  font-style: normal;
+  font-size: 96px;
+  line-height: 110%;
+  color: #fff;
+}
+
+.desk-info {
+  margin-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.desk-info .desk-info__text {
+  max-width: 600px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 125%;
+  color: #fff;
+}
+
+.desk-info .desk-info__button {
+  font-size: 20px;
+  padding: 18px 50px;
+  line-height: 120%;
+  color: #fff;
+  border: 2px dashed #fff;
+  cursor: pointer;
+}
+
+.dots {
+  margin-top: 133px;
+  max-width: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dot {
+  background: url("/DaringYoung/assets/icons/dot-null.svg");
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+
+.dot--beginners {
+  background: url("/DaringYoung/assets/icons/dot-beginners.svg");
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+.slide--active {
+  display: block;
+}
+
+.information {
+  padding: 120px 0 200px 0;
+}
+
+.information-sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.information-item .information-item__desk {
+  margin: 30px 0 0 0;
+}
+
+.information-item__title {
+  margin: 20px 0 0 0;
+  font-size: 36px;
+  line-height: 115%;
+  color: #1d1a1a;
+}
+
+.information-item__title--begginers {
+  color: #0ed984;
+}
+
+.information-item__title--specialists {
+  color: #3577f7;
+}
+
+.information-item__title--leaders {
+  color: #d72df3;
+}
+
+.footer {
+  background: #1d1a1a;
+}
+
+.footer__link:hover,
+.footer__link:active,
+.footer__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-wrapper {
+  padding: 18px 0 17px 0;
+}
+/*# sourceMappingURL=styles.css.map */

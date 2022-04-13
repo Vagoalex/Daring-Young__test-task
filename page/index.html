@@ -10,137 +10,149 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet" />
 
-		<link rel="stylesheet" href="./css/styles.scss" />
+		<link rel="stylesheet" href="./css/styles.css" />
 		<title>Study-Online</title>
 	</head>
 	<body>
-		<section class="hero">
-			<div class="slider">
-				<!-- slide-beginners -->
-				<div class="slide slide--beginners">
-					<div class="slide--container">
-						<div class="slide__header">
-							<a class="slide__link" href="#!">
-								<div class="logo">
-									<span class="logo__name">учимся</span>
-									<span class="logo__icon"></span>
-									<span class="logo__second-name logo--beginners">Online</span>
-								</div>
-							</a>
-						</div>
-						<div class="slide__desk desk">
-							<h4 class="desk__sub-title">Новички</h4>
-							<h2 class="desk__title">Сделайте шаг к новой профессии</h2>
-							<div class="desk__info desk-info">
-								<p class="desk-info__text">Курсы, которые помогут освоить востребованную профессию с нуля или изучить новую специализацию</p>
-								<button class="desk-info__button">Подробнее</button>
+		<div class="slider">
+			<!-- slide-beginners -->
+			<div class="slide slide--beginners">
+				<div class="slide--container">
+					<div class="slide__header">
+						<a class="slide__link" href="#!">
+							<div class="logo">
+								<span class="logo__name">учимся</span>
+								<span class="logo__icon"></span>
+								<span class="logo__second-name logo--beginners">Онлайн</span>
 							</div>
-						</div>
-						<div class="dots">
-							<span class="dot"></span>
-							<span class="dot"></span>
-							<span class="dot"></span>
+						</a>
+					</div>
+					<div class="slide__desk desk">
+						<p class="desk__sub-title">Новички</p>
+						<p class="desk__title">
+							Сделайте шаг <br />
+							к новой профессии
+						</p>
+						<div class="desk__info desk-info">
+							<p class="desk-info__text">Курсы, которые помогут освоить востребованную профессию с нуля или изучить новую специализацию</p>
+							<a class="desk-info__button">Подробнее</a>
 						</div>
 					</div>
-				</div>
-				<!-- slide-specialists -->
-				<div class="slide slide--specialists">
-					<div class="slide--container">
-						<div class="slide__header">
-							<a class="slide__link" href="#!">
-								<div class="logo">
-									<span class="logo__name">учимся</span>
-									<span class="logo__icon"></span>
-									<span class="logo__second-name logo--specialists">Online</span>
-								</div>
-							</a>
-						</div>
-						<div class="slide__desk desk">
-							<h4 class="desk__sub-title">Специалисты</h4>
-							<h2 class="desk__title">Сделайте шаг к росту карьеры</h2>
-							<div class="desk__info desk-info">
-								<p class="desk-info__text">Курсы для специалистов с опытом, чтобы развиваться в профессии и открывать новые возможности в карьере</p>
-								<button class="desk-info__button">Подробнее</button>
-							</div>
-						</div>
-						<div class="dots">
-							<span class="dot"></span>
-							<span class="dot"></span>
-							<span class="dot"></span>
-						</div>
+					<div class="dots">
+						<span id="dot-beginners" class="dot"></span>
+						<span id="dot-specialists" class="dot"></span>
+						<span id="dot-leaders" class="dot"></span>
 					</div>
 				</div>
-
-				<!-- slide-leaders -->
-				<div class="slide slide--beginners">
-					<div class="slide--container">
-						<div class="slide__header">
-							<a class="slide__link" href="#!">
-								<div class="logo">
-									<span class="logo__name">учимся</span>
-									<span class="logo__icon"></span>
-									<span class="logo__second-name logo--leaders">Online</span>
-								</div>
-							</a>
-						</div>
-						<div class="slide__desk desk">
-							<h4 class="desk__sub-title">Руководители</h4>
-							<h2 class="desk__title">Сделайте шаг к новым решениям</h2>
-							<div class="desk__info desk-info">
-								<p class="desk-info__text">Курсы для руководителей, чтобы развивать управленческие навыки и растить бизнес</p>
-								<button class="desk-info__button">Подробнее</button>
-							</div>
-						</div>
-
-						<div class="dots">
-							<span class="dot"></span>
-							<span class="dot"></span>
-							<span class="dot"></span>
-						</div>
-					</div>
-				</div>
-
-				<div class="btn-prev"></div>
-				<div class="btn-next"></div>
 			</div>
-		</section>
+			<!-- slide-specialists -->
+			<div class="slide slide--specialists">
+				<div class="slide--container">
+					<div class="slide__header">
+						<a class="slide__link" href="#!">
+							<div class="logo">
+								<span class="logo__name">учимся</span>
+								<span class="logo__icon"></span>
+								<span class="logo__second-name logo--specialists">Онлайн</span>
+							</div>
+						</a>
+					</div>
+					<div class="slide__desk desk">
+						<p class="desk__sub-title">Специалисты</p>
+						<p class="desk__title">
+							Сделайте шаг <br />
+							к росту карьеры
+						</p>
+						<div class="desk__info desk-info">
+							<p class="desk-info__text">Курсы для специалистов с опытом, чтобы развиваться в профессии и открывать новые возможности в карьере</p>
+							<button class="desk-info__button">Подробнее</button>
+						</div>
+					</div>
+					<div class="dots">
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+					</div>
+				</div>
+			</div>
+
+			<!-- slide-leaders -->
+			<div class="slide slide--leaders">
+				<div class="slide--container">
+					<div class="slide__header">
+						<a class="slide__link" href="#!">
+							<div class="logo">
+								<span class="logo__name">учимся</span>
+								<span class="logo__icon"></span>
+								<span class="logo__second-name logo--leaders">Онлайн</span>
+							</div>
+						</a>
+					</div>
+					<div class="slide__desk desk">
+						<p class="desk__sub-title">Руководители</p>
+						<p class="desk__title">
+							Сделайте шаг <br />
+							к новым решениям
+						</p>
+						<div class="desk__info desk-info">
+							<p class="desk-info__text">Курсы для руководителей, чтобы развивать управленческие навыки и растить бизнес</p>
+							<button class="desk-info__button">Подробнее</button>
+						</div>
+					</div>
+
+					<div class="dots">
+						<span id="dot-beginners" class="dot"></span>
+						<span id="dot-specialists" class="dot"></span>
+						<span id="dot-leaders" class="dot"></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="btn-prev"></div>
+			<div class="btn-next"></div>
+		</div>
 
 		<section class="information">
-			<div class="information-sections">
+			<div class="information-sections wrapper">
 				<div class="information-sections__item information-item">
-					<img src="#!" alt="profession" />
-					<h3 class="information-item__title">
+					<img src="/DaringYoung/assets/icons/information-profession.svg" alt="profession" />
+					<p class="information-item__title">
 						Получите<br />
-						<span class="information-item__title--detail">профессию</span>
-					</h3>
+						<span class="information-item__title--begginers">профессию</span>
+					</p>
 					<p class="information-item__desk">Базовые курсы для изучения новой сферы или профессии — с практикой и помощью в трудоустройстве</p>
 				</div>
 				<div class="information-sections__item information-item">
-					<img src="#!" alt="profession" />
-					<h3 class="information-item__title">
+					<img src="/DaringYoung/assets/icons/information-graphic.svg" alt="profession" />
+					<p class="information-item__title">
 						Растите<br />
-						<span class="information-item__title--detail">в профессии</span>
-					</h3>
+						<span class="information-item__title--specialists">в профессии</span>
+					</p>
 					<p class="information-item__desk">Базовые курсы для изучения новой сферы или профессии — с практикой и помощью в трудоустройстве</p>
 				</div>
 				<div class="information-sections__item information-item">
-					<img src="#!" alt="profession" />
-					<h3 class="information-item__title">
+					<img src="/DaringYoung/assets/icons/information-lead.svg" alt="profession" />
+					<p class="information-item__title">
 						Управляйте<br />
-						<span class="information-item__title--detail">эффективно</span>
-					</h3>
+						<span class="information-item__title--leaders">эффективно</span>
+					</p>
 					<p class="information-item__desk">Базовые курсы для изучения новой сферы или профессии — с практикой и помощью в трудоустройстве</p>
 				</div>
 			</div>
 		</section>
+
 		<footer class="footer">
-			<a href="#!" class="footer__link">
-				<div class="logo">
-					<span class="logo__name">учимся</span>
-					<span class="logo__icon"></span>
-					<span id="logo-footer" class="logo__second-name">Online</span>
-				</div>
-			</a>
+			<div class="footer-wrapper wrapper">
+				<a href="#!" class="footer__link">
+					<div class="logo">
+						<span class="logo__name">учимся</span>
+						<span class="logo__icon"></span>
+						<span id="logo-footer" class="logo__second-name logo--beginners">Онлайн</span>
+					</div>
+				</a>
+			</div>
 		</footer>
+
+		<script src="./js/main.js"></script>
 	</body>
 </html>
