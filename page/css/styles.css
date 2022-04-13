@@ -1,5 +1,9 @@
 @import url("./components/normalize.css");
 @import url("./components/global.css");
+.slider {
+  position: relative;
+}
+
 .slide {
   display: none;
 }
@@ -58,7 +62,7 @@
 }
 
 .slide__desk {
-  padding-top: 195px;
+  padding-top: 194px;
 }
 
 .desk .desk__sub-title {
@@ -81,7 +85,7 @@
 }
 
 .desk .desk__title {
-  margin: 20px 0 0 0;
+  margin: 32px 0 0 0;
   font-style: normal;
   font-size: 96px;
   line-height: 110%;
@@ -89,7 +93,7 @@
 }
 
 .desk-info {
-  margin-top: 45px;
+  margin-top: 26px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,7 +106,7 @@
 }
 
 .desk-info .desk-info__text {
-  max-width: 600px;
+  max-width: 585px;
   font-weight: 300;
   font-size: 20px;
   line-height: 125%;
@@ -118,8 +122,72 @@
   cursor: pointer;
 }
 
+.slide--specialists {
+  position: relative;
+  background: url("/DaringYoung/assets/images/specialists/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 138px;
+}
+
+.slide--specialists .logo--specialists {
+  color: #3577f7;
+}
+
+.slide--leaders {
+  position: relative;
+  background: url("/DaringYoung/assets/images/leaders/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 138px;
+}
+
+.slide--leaders .logo--specialists {
+  color: #3577f7;
+}
+
+.btn-prev {
+  background: url("/DaringYoung/assets/icons/slider-left.svg");
+  position: absolute;
+  top: 47%;
+  left: 4%;
+  width: 28px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.btn-prev:hover {
+  background: url("/DaringYoung/assets/icons/slider-left--hover.svg");
+  width: 48px;
+  height: 50px;
+  left: 3%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-next {
+  background: url("/DaringYoung/assets/icons/slider-right.svg");
+  position: absolute;
+  top: 47%;
+  right: 4%;
+  width: 28px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.btn-next:hover {
+  background: url("/DaringYoung/assets/icons/slider-right--hover.svg");
+  width: 48px;
+  height: 50px;
+  right: 3%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
 .dots {
-  margin-top: 133px;
+  margin-top: 118px;
   max-width: 95px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -190,7 +258,7 @@
 }
 
 .information {
-  padding: 120px 0 200px 0;
+  padding: 190px 0 196px 0;
 }
 
 .information-sections {
@@ -199,12 +267,25 @@
   display: flex;
 }
 
+.information-item {
+  margin-right: 100px;
+}
+
+.information-item:nth-child(3) {
+  margin-right: 0px;
+}
+
 .information-item .information-item__desk {
-  margin: 30px 0 0 0;
+  max-width: 450px;
+  margin: 20px 0 0 0;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 130%;
+  color: #615d5d;
 }
 
 .information-item__title {
-  margin: 20px 0 0 0;
+  margin: 25px 0 0 0;
   font-size: 36px;
   line-height: 115%;
   color: #1d1a1a;
@@ -234,6 +315,6 @@
 }
 
 .footer-wrapper {
-  padding: 18px 0 17px 0;
+  padding: 20px 0 17px 0;
 }
 /*# sourceMappingURL=styles.css.map */

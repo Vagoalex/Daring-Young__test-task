@@ -13,3 +13,17 @@ for (let item of sections) {
 		dotBeginners.classList.add('dot--beginners');
 	}
 }
+// for (let item of sections) {
+// 	if (item.classList.contains('slide--specialists')) {
+// 		item.classList.add('slide--active');
+// 		const dotSpecialists = item.querySelector('#dot-specialists');
+// 		dotSpecialists.classList.add('dot--specialists');
+// 	}
+// }
+// for (let item of sections) {
+// 	if (item.classList.contains('slide--leaders')) {
+// 		item.classList.add('slide--active');
+// 		const dotLeaders = item.querySelector('#dot-leaders');
+// 		dotLeaders.classList.add('dot--leaders');
+// 	}
+// }
