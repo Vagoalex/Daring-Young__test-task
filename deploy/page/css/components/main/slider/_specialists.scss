@@ -1,0 +1,29 @@
+.slide--specialists {
+	position: relative;
+	background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/images/specialists/background.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-bottom: 279px;
+}
+.logo--specialists {
+	color: $colorSpecialists;
+}
+
+.desk__sub-title--specialists {
+	color: $colorSpecialists;
+
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: -7px;
+		right: 0;
+		background: $colorSpecialists;
+		width: 100%;
+		height: 3px;
+	}
+}
+
+.desk-info__button--specialists:hover {
+	color: $colorSpecialists;
+}

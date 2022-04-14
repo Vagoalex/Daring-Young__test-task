@@ -1,0 +1,13 @@
+.footer {
+	background: #1d1a1a;
+}
+.footer__link:hover,
+.footer__link:active,
+.footer__link {
+	text-decoration: none;
+	color: $colorText;
+}
+
+.footer-wrapper {
+	padding: 21px 0 17px 0;
+}

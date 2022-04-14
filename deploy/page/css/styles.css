@@ -1,0 +1,363 @@
+@import url("./components/normalize.css");
+@import url("./components/global.css");
+.slider {
+  position: relative;
+}
+
+.slide {
+  display: none;
+}
+
+.slide__header {
+  padding-top: 70px;
+}
+
+.slide__link:hover,
+.slide__link:active,
+.slide__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 198px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo .logo__name {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 120%;
+  color: #fff;
+}
+
+.logo .logo__icon {
+  background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/icons/logo.svg);
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.logo .logo__second-name {
+  font-size: 22px;
+  line-height: 120%;
+}
+
+.slide__desk {
+  padding-top: 194px;
+}
+
+.desk .desk__sub-title {
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  line-height: 120%;
+  margin: 0;
+}
+
+.desk .desk__title {
+  margin: 32px 0 0 0;
+  font-style: normal;
+  font-size: 96px;
+  line-height: 110%;
+  color: #fff;
+}
+
+.desk-info {
+  margin-top: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.desk-info .desk-info__text {
+  max-width: 585px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 125%;
+  color: #fff;
+}
+
+.desk-info .desk-info__button {
+  font-size: 20px;
+  padding: 18px 50px;
+  line-height: 120%;
+  color: #fff;
+  border: 2px dashed #fff;
+  cursor: pointer;
+}
+
+.btn-prev {
+  background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/icons/slider-left.svg);
+  position: absolute;
+  top: 47%;
+  left: 4%;
+  width: 28px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.btn-prev:hover {
+  background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/icons/slider-left--hover.svg);
+  width: 48px;
+  height: 50px;
+  left: 3%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-next {
+  background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/icons/slider-right.svg);
+  position: absolute;
+  top: 47%;
+  right: 4%;
+  width: 28px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.btn-next:hover {
+  background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/icons/slider-right--hover.svg);
+  width: 48px;
+  height: 50px;
+  right: 3%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.dots {
+  position: absolute;
+  bottom: 138px;
+  left: 250px;
+}
+
+.dots-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95px;
+}
+
+.dot {
+  background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/icons/dot-null.svg);
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.dot--active {
+  background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/icons/dot-beginners.svg);
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+.dot--beginners {
+  background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/icons/dot-beginners.svg);
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+.dot--specialists {
+  background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/icons/dot-specialists.svg);
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+.dot--leaders {
+  background: url(../../../../../../../Daring-Young__test-task/deploy//page/assets/icons/dot-leaders.svg);
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+.slide--active {
+  display: block;
+}
+
+.desk-info__button:hover {
+  background: #fff;
+}
+
+.dot:nth-child(2):hover {
+  background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/icons/dot-null-beginners.svg);
+}
+
+.dot:nth-child(3):hover {
+  background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/icons/dot-null-beginners.svg);
+}
+
+.slide--beginners {
+  position: relative;
+  background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/images/beginners/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 279px;
+}
+
+.logo--beginners {
+  color: #0ed984;
+}
+
+.desk__sub-title--beginners {
+  color: #0ed984;
+}
+
+.desk__sub-title--beginners::after {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  right: 0;
+  background: #0ed984;
+  width: 100%;
+  height: 3px;
+}
+
+.desk-info__button--beginners:hover {
+  color: #0ed984;
+}
+
+.slide--specialists {
+  position: relative;
+  background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/images/specialists/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 279px;
+}
+
+.logo--specialists {
+  color: #3577f7;
+}
+
+.desk__sub-title--specialists {
+  color: #3577f7;
+}
+
+.desk__sub-title--specialists::after {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  right: 0;
+  background: #3577f7;
+  width: 100%;
+  height: 3px;
+}
+
+.desk-info__button--specialists:hover {
+  color: #3577f7;
+}
+
+.slide--leaders {
+  position: relative;
+  background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/images/leaders/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 279px;
+}
+
+.logo--leaders {
+  color: #d72df3;
+}
+
+.desk__sub-title--leaders {
+  color: #d72df3;
+}
+
+.desk__sub-title--leaders::after {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  right: 0;
+  background: #d72df3;
+  width: 100%;
+  height: 3px;
+}
+
+.desk-info__button--leaders:hover {
+  color: #d72df3;
+}
+
+.information {
+  padding: 190px 0 196px 0;
+}
+
+.information-sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.information-item {
+  margin-right: 100px;
+}
+
+.information-item:nth-child(3) {
+  margin-right: 0px;
+}
+
+.information-item .information-item__desk {
+  max-width: 450px;
+  margin: 20px 0 0 0;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 130%;
+  color: #615d5d;
+}
+
+.information-item__title {
+  margin: 25px 0 0 0;
+  font-size: 36px;
+  line-height: 115%;
+  color: #1d1a1a;
+}
+
+.information-item__title--begginers {
+  color: #0ed984;
+}
+
+.information-item__title--specialists {
+  color: #3577f7;
+}
+
+.information-item__title--leaders {
+  color: #d72df3;
+}
+
+.footer {
+  background: #1d1a1a;
+}
+
+.footer__link:hover,
+.footer__link:active,
+.footer__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-wrapper {
+  padding: 21px 0 17px 0;
+}
+/*# sourceMappingURL=styles.css.map */
