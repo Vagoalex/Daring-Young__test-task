@@ -1,0 +1,29 @@
+.slide--leaders {
+	position: relative;
+	background: url('/work/page/assets/images/leaders/background.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-bottom: 279px;
+}
+.logo--leaders {
+	color: $colorLeaders;
+}
+
+.desk__sub-title--leaders {
+	color: $colorLeaders;
+
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: -7px;
+		right: 0;
+		background: $colorLeaders;
+		width: 100%;
+		height: 3px;
+	}
+}
+
+.desk-info__button--leaders:hover {
+	color: $colorLeaders;
+}

@@ -8,15 +8,6 @@
   display: none;
 }
 
-.slide--beginners {
-  position: relative;
-  background: url("/DaringYoung/assets/images/beginners/background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-bottom: 138px;
-}
-
 .slide__header {
   padding-top: 70px;
 }
@@ -46,7 +37,7 @@
 }
 
 .logo .logo__icon {
-  background: url("/DaringYoung/assets/icons/logo.svg");
+  background: url("/work/page/assets/icons/logo.svg");
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -55,10 +46,6 @@
 .logo .logo__second-name {
   font-size: 22px;
   line-height: 120%;
-}
-
-.logo .logo--beginners {
-  color: #0ed984;
 }
 
 .slide__desk {
@@ -70,18 +57,7 @@
   position: relative;
   font-size: 20px;
   line-height: 120%;
-  color: #0ed984;
   margin: 0;
-}
-
-.desk .desk__sub-title::after {
-  content: '';
-  position: absolute;
-  bottom: -7px;
-  right: 0;
-  background: #0ed984;
-  width: 100%;
-  height: 3px;
 }
 
 .desk .desk__title {
@@ -122,34 +98,8 @@
   cursor: pointer;
 }
 
-.slide--specialists {
-  position: relative;
-  background: url("/DaringYoung/assets/images/specialists/background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-bottom: 138px;
-}
-
-.slide--specialists .logo--specialists {
-  color: #3577f7;
-}
-
-.slide--leaders {
-  position: relative;
-  background: url("/DaringYoung/assets/images/leaders/background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-bottom: 138px;
-}
-
-.slide--leaders .logo--specialists {
-  color: #3577f7;
-}
-
 .btn-prev {
-  background: url("/DaringYoung/assets/icons/slider-left.svg");
+  background: url("/work/page/assets/icons/slider-left.svg");
   position: absolute;
   top: 47%;
   left: 4%;
@@ -159,7 +109,7 @@
 }
 
 .btn-prev:hover {
-  background: url("/DaringYoung/assets/icons/slider-left--hover.svg");
+  background: url("/work/page/assets/icons/slider-left--hover.svg");
   width: 48px;
   height: 50px;
   left: 3%;
@@ -168,7 +118,7 @@
 }
 
 .btn-next {
-  background: url("/DaringYoung/assets/icons/slider-right.svg");
+  background: url("/work/page/assets/icons/slider-right.svg");
   position: absolute;
   top: 47%;
   right: 4%;
@@ -178,7 +128,7 @@
 }
 
 .btn-next:hover {
-  background: url("/DaringYoung/assets/icons/slider-right--hover.svg");
+  background: url("/work/page/assets/icons/slider-right--hover.svg");
   width: 48px;
   height: 50px;
   right: 3%;
@@ -187,8 +137,12 @@
 }
 
 .dots {
-  margin-top: 118px;
-  max-width: 95px;
+  position: absolute;
+  bottom: 138px;
+  left: 250px;
+}
+
+.dots-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,32 +152,40 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 95px;
 }
 
 .dot {
-  background: url("/DaringYoung/assets/icons/dot-null.svg");
+  background: url("/work/page/assets/icons/dot-null.svg");
   display: inline-block;
   width: 15px;
   height: 15px;
   cursor: pointer;
 }
 
+.dot--active {
+  background: url("/work/page/assets/icons/dot-beginners.svg");
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
 .dot--beginners {
-  background: url("/DaringYoung/assets/icons/dot-beginners.svg");
+  background: url("/work/page/assets/icons/dot-beginners.svg");
   display: inline-block;
   width: 25px;
   height: 25px;
 }
 
 .dot--specialists {
-  background: url("/DaringYoung/assets/icons/dot-specialists.svg");
+  background: url("/work/page/assets/icons/dot-specialists.svg");
   display: inline-block;
   width: 25px;
   height: 25px;
 }
 
 .dot--leaders {
-  background: url("/DaringYoung/assets/icons/dot-leaders.svg");
+  background: url("/work/page/assets/icons/dot-leaders.svg");
   display: inline-block;
   width: 25px;
   height: 25px;
@@ -237,24 +199,105 @@
   background: #fff;
 }
 
+.dot:nth-child(2):hover {
+  background: url("/work/page/assets/icons/dot-null-beginners.svg");
+}
+
+.dot:nth-child(3):hover {
+  background: url("/work/page/assets/icons/dot-null-beginners.svg");
+}
+
+.slide--beginners {
+  position: relative;
+  background: url("/work/page/assets/images/beginners/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 279px;
+}
+
+.logo--beginners {
+  color: #0ed984;
+}
+
+.desk__sub-title--beginners {
+  color: #0ed984;
+}
+
+.desk__sub-title--beginners::after {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  right: 0;
+  background: #0ed984;
+  width: 100%;
+  height: 3px;
+}
+
 .desk-info__button--beginners:hover {
   color: #0ed984;
+}
+
+.slide--specialists {
+  position: relative;
+  background: url("/work/page/assets/images/specialists/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 279px;
+}
+
+.logo--specialists {
+  color: #3577f7;
+}
+
+.desk__sub-title--specialists {
+  color: #3577f7;
+}
+
+.desk__sub-title--specialists::after {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  right: 0;
+  background: #3577f7;
+  width: 100%;
+  height: 3px;
 }
 
 .desk-info__button--specialists:hover {
   color: #3577f7;
 }
 
-.desk-info__button--leaders:hover {
+.slide--leaders {
+  position: relative;
+  background: url("/work/page/assets/images/leaders/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 279px;
+}
+
+.logo--leaders {
   color: #d72df3;
 }
 
-.dot:nth-child(2):hover {
-  background: url("/DaringYoung/assets/icons/dot-null-beginners.svg");
+.desk__sub-title--leaders {
+  color: #d72df3;
 }
 
-.dot:nth-child(3):hover {
-  background: url("/DaringYoung/assets/icons/dot-null-beginners.svg");
+.desk__sub-title--leaders::after {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  right: 0;
+  background: #d72df3;
+  width: 100%;
+  height: 3px;
+}
+
+.desk-info__button--leaders:hover {
+  color: #d72df3;
 }
 
 .information {
@@ -315,6 +358,6 @@
 }
 
 .footer-wrapper {
-  padding: 20px 0 17px 0;
+  padding: 21px 0 17px 0;
 }
 /*# sourceMappingURL=styles.css.map */

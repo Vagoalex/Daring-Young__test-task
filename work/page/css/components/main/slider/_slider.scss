@@ -1,0 +1,195 @@
+.slider {
+	position: relative;
+}
+.slide {
+	display: none;
+}
+
+.slide__header {
+	padding-top: 70px;
+}
+.slide__link:hover,
+.slide__link:active,
+.slide__link {
+	text-decoration: none;
+	color: $colorText;
+}
+
+.logo {
+	display: flex;
+	max-width: 198px;
+	justify-content: space-between;
+
+	.logo__name {
+		font-weight: 300;
+		font-size: 22px;
+		line-height: 120%;
+		color: $colorText;
+	}
+	.logo__icon {
+		background: url('/work/page/assets/icons/logo.svg');
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+	}
+	.logo__second-name {
+		font-size: 22px;
+		line-height: 120%;
+	}
+}
+
+.slide__desk {
+	padding-top: 194px;
+}
+.desk {
+	.desk__sub-title {
+		display: inline-block;
+		position: relative;
+
+		font-size: 20px;
+		line-height: 120%;
+
+		margin: 0;
+	}
+
+	.desk__title {
+		margin: 32px 0 0 0;
+		font-style: normal;
+		font-size: 96px;
+		line-height: 110%;
+		color: $colorText;
+	}
+}
+
+.desk-info {
+	margin-top: 26px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.desk-info__text {
+		max-width: 585px;
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 125%;
+		color: $colorText;
+	}
+	.desk-info__button {
+		font-size: 20px;
+		padding: 18px 50px;
+		line-height: 120%;
+		color: $colorText;
+		border: 2px dashed $colorText;
+		cursor: pointer;
+	}
+}
+
+.btn-prev {
+	background: url('/work/page/assets/icons/slider-left.svg');
+	position: absolute;
+	top: 47%;
+	left: 4%;
+	width: 28px;
+	height: 50px;
+	cursor: pointer;
+	&:hover {
+		background: url('/work/page/assets/icons/slider-left--hover.svg');
+		width: 48px;
+		height: 50px;
+		left: 3%;
+		transition: 0.5s;
+	}
+}
+.btn-next {
+	background: url('/work/page/assets/icons/slider-right.svg');
+	position: absolute;
+	top: 47%;
+	right: 4%;
+	width: 28px;
+	height: 50px;
+	cursor: pointer;
+	&:hover {
+		background: url('/work/page/assets/icons/slider-right--hover.svg');
+		width: 48px;
+		height: 50px;
+		right: 3%;
+		transition: 0.6s;
+	}
+}
+
+.dots {
+	position: absolute;
+	bottom: 138px;
+	left: 250px;
+}
+
+.dots-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 95px;
+}
+.dot {
+	background: url('/work/page/assets/icons/dot-null.svg');
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+}
+
+.dot--active {
+	background: url('/work/page/assets/icons/dot-beginners.svg');
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+}
+
+.dot--beginners {
+	background: url('/work/page/assets/icons/dot-beginners.svg');
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+}
+.dot--specialists {
+	background: url('/work/page/assets/icons/dot-specialists.svg');
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+}
+.dot--leaders {
+	background: url('/work/page/assets/icons/dot-leaders.svg');
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+}
+
+.slide--active {
+	display: block;
+}
+
+.desk-info__button:hover {
+	background: $colorText;
+}
+
+@if '#slide--beginners has class #slide--active' {
+	.dot:nth-child(2):hover {
+		background: url('/work/page/assets/icons/dot-null-beginners.svg');
+	}
+	.dot:nth-child(3):hover {
+		background: url('/work/page/assets/icons/dot-null-beginners.svg');
+	}
+} @else if '#slide--specialists has class #slide--active' {
+	.dot:nth-child(1):hover {
+		background: url('/work/page/assets/icons/dot-null-specialists.svg');
+	}
+	.dot:nth-child(3):hover {
+		background: url('/work/page/assets/icons/dot-null-specialists.svg');
+	}
+} @else if '#slide--leaders has class #slide--active' {
+	.dot:nth-child(1):hover {
+		background: url('/work/page/assets/icons/dot-null-leaders.svg');
+	}
+	.dot:nth-child(2):hover {
+		background: url('/work/page/assets/icons/dot-null-leaders.svg');
+	}
+}
