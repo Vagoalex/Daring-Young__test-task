@@ -199,14 +199,6 @@
   background: #fff;
 }
 
-.dot:nth-child(2):hover {
-  background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/icons/dot-null-beginners.svg);
-}
-
-.dot:nth-child(3):hover {
-  background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/icons/dot-null-beginners.svg);
-}
-
 .slide--beginners {
   position: relative;
   background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/images/beginners/background.jpg);

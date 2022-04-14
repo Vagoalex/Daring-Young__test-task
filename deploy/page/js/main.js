@@ -6,7 +6,10 @@ const UI = {
 	slideSpecialists: document.querySelector('.slide--specialists'),
 	slideLeaders: document.querySelector('.slide--leaders'),
 	dots: document.querySelectorAll('.dot'),
+	footerLogo: document.getElementById('logo-footer'),
 };
+
+console.log(UI.footerLogo);
 
 let index = 0;
 slideAndDotActive(index);
@@ -37,6 +40,7 @@ function prevSlide() {
 function slideAndDotActive(numbIndex) {
 	activeSlide(numbIndex);
 	activeDot(numbIndex);
+	activeFooter(numbIndex);
 }
 
 function activeSlide(n) {
@@ -47,10 +51,59 @@ function activeSlide(n) {
 }
 
 function activeDot(n) {
+	const beginnersID = UI.dots[n].id == 'dot-beginners';
+	const specialistsID = UI.dots[n].id == 'dot-specialists';
+	const leadersID = UI.dots[n].id == 'dot-leaders';
+
+	const slidesClasses = {
+		beginners: 'dot--beginners',
+		specialists: 'dot--specialists',
+		leaders: 'dot--leaders',
+	};
+
+	UI.dots.forEach(dot => {
+		dot.classList.remove('dot--active');
+
+		dot.classList.remove(slidesClasses.beginners);
+		dot.classList.remove(slidesClasses.specialists);
+		dot.classList.remove(slidesClasses.leaders);
+	});
+
 	UI.dots.forEach(dot => {
 		dot.classList.remove('dot--active');
 	});
-	UI.dots[n].classList.add('dot--active');
+
+	if (beginnersID) {
+		UI.dots[n].classList.add(slidesClasses.beginners);
+	} else if (specialistsID) {
+		UI.dots[n].classList.add(slidesClasses.specialists);
+	} else if (leadersID) {
+		UI.dots[n].classList.add(slidesClasses.leaders);
+	}
+}
+
+function activeFooter(n) {
+	const beginnersID = UI.dots[n].id == 'dot-beginners';
+	const specialistsID = UI.dots[n].id == 'dot-specialists';
+	const leadersID = UI.dots[n].id == 'dot-leaders';
+
+	const slidesClasses = {
+		beginners: 'logo--beginners',
+		specialists: 'logo--specialists',
+		leaders: 'logo--leaders',
+	};
+
+	UI.footerLogo.classList.remove(slidesClasses.beginners);
+	UI.footerLogo.classList.remove(slidesClasses.specialists);
+	UI.footerLogo.classList.remove(slidesClasses.leaders);
+
+	if (beginnersID) {
+		UI.footerLogo.classList.add(slidesClasses.beginners);
+	} else if (specialistsID) {
+		UI.footerLogo.classList.add(slidesClasses.specialists);
+	} else if (leadersID) {
+		UI.footerLogo.classList.add(slidesClasses.leaders);
+	}
 }
 
 UI.dots.forEach((el, dotIndex) => {

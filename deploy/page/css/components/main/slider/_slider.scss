@@ -171,25 +171,25 @@
 	background: $colorText;
 }
 
-@if '#slide--beginners has class #slide--active' {
-	.dot:nth-child(2):hover {
-		background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/icons/dot-null-beginners.svg);
-	}
-	.dot:nth-child(3):hover {
-		background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/icons/dot-null-beginners.svg);
-	}
-} @else if '#slide--specialists has class #slide--active' {
-	.dot:nth-child(1):hover {
-		background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/icons/dot-null-specialists.svg);
-	}
-	.dot:nth-child(3):hover {
-		background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/icons/dot-null-specialists.svg);
-	}
-} @else if '#slide--leaders has class #slide--active' {
-	.dot:nth-child(1):hover {
-		background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/icons/dot-null-leaders.svg);
-	}
-	.dot:nth-child(2):hover {
-		background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/icons/dot-null-leaders.svg);
-	}
-}
+// @if '#slide--beginners has class #slide--active' {
+// 	.dot:nth-child(2):hover {
+// 		background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/icons/dot-null-beginners.svg);
+// 	}
+// 	.dot:nth-child(3):hover {
+// 		background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/icons/dot-null-beginners.svg);
+// 	}
+// } @else if '#slide--specialists has class #slide--active' {
+// 	.dot:nth-child(1):hover {
+// 		background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/icons/dot-null-specialists.svg);
+// 	}
+// 	.dot:nth-child(3):hover {
+// 		background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/icons/dot-null-specialists.svg);
+// 	}
+// } @else if '#slide--leaders has class #slide--active' {
+// 	.dot:nth-child(1):hover {
+// 		background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/icons/dot-null-leaders.svg);
+// 	}
+// 	.dot:nth-child(2):hover {
+// 		background: url(../../../../../../../Daring-Young__test-task/deploy/page/assets/icons/dot-null-leaders.svg);
+// 	}
+// }
